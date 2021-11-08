@@ -1,0 +1,312 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - howdy        
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - adios amigo 
+    - tataaaaa
+    - tata 
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - awesome 
+    
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nopes 
+    - not necessary
+    - nopes 
+    - nope 
+
+- intent: order_prescription
+  examples: | 
+    - I want to order my prescriptions
+    - I want to get my prescriptions delivered 
+    - I want my prescriptions
+    - I need my prescriptions
+    - Order prescriptions
+    - get my prescriptions delivered
+    - Bring my prescriptions
+    - Place an order    
+    - I would like to place an order for my prescriptions
+    - I need my prescriptions delivered
+    - I want my prescriptions delivered to my doorstep 
+    - I need my prescriptions delivered to my doorstep 
+    - I want my prescriptions delivered    
+    - I want my prescriptions delivered to my place 
+    - Need my prescriptions delivered to my place 
+    - Need the prescriptions delivered to home 
+    - Want the prescriptions delivered to home      
+    - Want my prescriptions at my home     
+    - I need to order my prescriptions online  
+    - I need you to bring my prescriptions  
+    - I want you to bring my prescriptions 
+    - I want to order my prescriptions online  
+    - Need to upload a prescription 
+    - want to upload a prescription  
+    - I need to upload an image of my prescription  
+    - Upload an Image of my Prescription  
+    - Upload my prescription  
+    - Upload a prescription  
+    - Prescription upload 
+    - Upload prescription  
+    - Fill the prescription form  
+    - Fill a prescription form 
+    - Prescription  
+    - I need medicinces delivered  
+    - I want my medicines to be delivered    
+    - I want meds 
+    - I need meds 
+    - require meds 
+    - I need drugs 
+    - I want drugs 
+    - I need my drugs delivered  
+    - Need drugs  
+    - Want drugs
+
+- intent: hospitals_nearby
+  examples: |
+    - I need to check the nearest hospitals
+    - Hospitals near me
+    - Hospitals nearby   
+    - I want to see the hospitals in my area  
+    - Can you direct me to the nearest hospital 
+    - Can you direct me to the closest hospital
+    - Close hospitals near me  
+    - Closest Hospitals  
+    - Distance to nearest hospital  
+    - View all hospitals around my area  
+    - Hospitals in my area   
+    - Closest digitalPulz hospital  
+    - Hospitals close to me  
+    - Point me to the nearest hospital   
+    - Nearest clinic 
+    - Nearest Doctor   
+    - I need to check the nearest clinics
+    - Clinics near me
+    - Clinics nearby   
+    - I want to see the clinics in my area  
+    - Can you direct me to the nearest clinic 
+    - Can you direct me to the closest clinic
+    - Close clinics near me  
+    - Closest clinics  
+    - Distance to nearest clinic  
+    - View all clinics around my area  
+    - Clinics in my area   
+    - Closest digitalPulz clinics  
+    - Clinics close to me  
+    - Point me to the nearest clinic
+    - View all the medical services nearby   
+    - View all the healthcare centres nearby  
+    - View all the dispensaries near me  
+    - Point me to the nearest dispensary 
+
+- intent: make_appointment
+  examples: |
+    - I need to make an appointment   
+    - Doctor Appointment  
+    - appointment  
+    - doctor
+    - Are doctors available?
+    - I need to channel a doctor
+    - channeling
+    - I want to make an appointment  
+    - I want to make appointments 
+    - I want to channel a doctor   
+    - I need to see a doctor   
+    - I want to see a doctor   
+    - I want to meet a doctor   
+    - I need to meet a doctor   
+    - I need to see a doctor   
+    - I want to consult a physician 
+    - I want to consult a doctor    
+    - I need to consult a doctor  
+    - Consult a doctor    
+    - Consult a physician  
+    - I need a doctor   
+    - I require medical consultation  
+    - I need medical consultation   
+    - See a doctor   
+    - Doctor's opinion 
+    - Doctor appointments 
+    - Doctors
+    - Any available appointments? 
+    - available appointments 
+
+- intent: user_profile
+  examples: |  
+    - I want to see my details 
+    - User profile 
+    - I need to check my details 
+    - I want to check my personal details 
+    - my details 
+    - Edit profile 
+    - I need to edit my details 
+    - I need to check the status 
+    - I need to see outstanding appointments 
+    - I want to see outstanding appointments 
+    - I want to edit my details 
+    - Edit my personal information  
+    - Change my personal information  
+    - Change my details
+    - I need to see my user profile 
+    - I want to check consultation history  
+    - I want to check order history
+    - I want to check payment history
+    - Check consultation history    
+    - Check order history
+    - Check payment history
+    - View my details 
+    - View consultation history    
+    - View order history
+    - View payment history
+    - I need to check consultation history  
+    - I need to check order history
+    - I need to check payment history
+    - I need to see consultation history  
+    - I need to see order history
+    - I need to see payment history
+    - I need to change my name 
+    - I need to change my birthday
+    - I need to change my phone number 
+    - I need to change my gender 
+    - I want to edit my name 
+    - I want to edit my birthday
+    - I want to edit my phone number 
+    - I need to edit my contact information 
+    - I want to change my contact information 
+    - I need to change my date of birth 
+    - I want to edit my date of birth 
+    - change my date of birth 
+    - update my personal information 
+    - update user profile 
+    - update my user profile 
+    - I need to update my name 
+    - I need to update my birthday
+    - I need to update my phone number 
+
+- intent: reset_conversation
+  examples: |
+    - I want to restart 
+    - restart 
+    - please go back 
+    - go back 
+    - start over 
+    - please start over 
+    - reload 
+    - Begin again 
+    - Start again 
+    - please start again 
+    - Please begin again 
+    - I need to start all over 
+    - I want to start all over 
+    - reset 
+    - Please reset 
+    - Reset the conversation 
+    - Restart the conversation 
+    - Rollback the conversation 
+    - Rollback 
+    - Please rollback 
+    - Please rollback the conversation
+    - Oops I made a mistake
+    - mistake
+    - Made a mistake 
+    - Fat-fingered
+    - Chose the wrong option  
+    - Want to change my option  
+    - Selected the wrong option   
+    - View the options again  
+    - Show the options again 
+
+- intent: channel_name
+  examples: |
+    - Channel by name 
+
+- intent: channel_hospital
+  examples: |
+    - Channel by Hospital
+
+- intent: channel_specialty
+  examples: |
+    - Channel by Specialty 
+
+- intent: prescription_type
+  examples: |
+    - image upload and survey
+    - image upload or survey 
+
+- intent: location_share
+  examples: |
+    - Location shared 
+
+- intent: another_service
+  examples: |
+    - I want to check other services 
+    - I need to see other services 
+    - Other services 
+    - Need to use another service 
+    - Want to use another service     
+    - Need to check another option      
+    - I want to use another option      
+    - Another option would be fine   
+    - What are the other options?  
+    - Could I see the other options ?
+    - Can I check other options ?
+    - Can I use another service ? 
+    - View other services 
+    - Show me other services 
+    - List out other alternatives 
+    - Let me see other options 
+    - Let me check other services  
+    - Other services available 
+    - Other options available 
+    - Other options 
+  
+- intent: sign_up
+  examples: |
+    - sign up   
+    - register 
+    - login 
+    

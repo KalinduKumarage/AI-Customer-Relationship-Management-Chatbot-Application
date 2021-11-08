@@ -1,0 +1,83 @@
+
+h1 {
+  margin-left: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #074bb8;
+}
+
+.EditBtn button {
+    margin-left: 22%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px solid #074bb8;
+    background-color: #008dfd;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    width: 50%;
+    height: 15vh;
+    text-align: right;
+    
+  }
+  
+  .deco{
+    text-decoration: none;
+  }
+
+  .EditBtn button:hover,
+  .EditBtn button:active {
+    background-color: #074bb8;
+  }
+  
+  .actions {
+    
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .actions button {
+    
+    font: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -5%;
+    margin-top: 2%;
+    position: relative;
+    cursor: pointer;
+    color: #ffffff;
+    border: #702fc0;
+    background-color: #8154B9;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    width: 50%;
+    height: 8vh;
+    
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #4b01a7;
+  }
+  
+  .Lgout{
+    margin-top: 5%;
+    margin-left: 22%;
+    position: absolute;
+  }
+  
+  .Add{
+    margin-left: 33%;
+    margin-top: 5%;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .radBtn{
+    margin-left: 38%;
+    margin-top: 5%;
+    font: inherit;
+    display: block;
+  }

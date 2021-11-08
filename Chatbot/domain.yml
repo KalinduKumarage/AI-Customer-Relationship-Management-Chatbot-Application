@@ -1,0 +1,102 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - order_prescription
+  - make_appointment
+  - hospitals_nearby
+  - user_profile
+  - reset_conversation
+  - prescription_type
+  - channel_specialty 
+  - channel_name 
+  - channel_hospital
+  - location_share 
+  - another_service
+  - sign_up
+
+responses:
+  utter_greet:
+  - text: "Hey! 😊 Which service do you prefer?"
+    buttons:
+       - title: "Doctor's Appointment 👨‍⚕️"
+         payload: "/make_appointment"
+       - title: "Order Prescription 📝"
+         payload: "/order_prescription"
+       - title: "View nearby Hospitals"
+         payload: "/hospitals_nearby"
+  
+  utter_services:
+  - text: "Which service do you prefer?"
+    buttons:
+       - title: "Doctor's Appointment 👨‍⚕️"
+         payload: "/make_appointment"
+       - title: "Order Prescription 📝"
+         payload: "/order_prescription"
+       - title: "Hospital Finder 🏥"
+         payload: "/hospitals_nearby"
+
+  utter_appointment_options:
+  - text: "Please select an option to channel a doctor 🏥"
+    buttons:
+    - title: "Channel by Specialty 🩺"
+      payload: "/channel_specialty"
+    - title: "Channel by Name 👨🏻‍⚕️"
+      payload: "/channel_name"
+    - title: "Channel by Hospital 🏥"
+      payload: "/channel_hospital"
+  
+  utter_sign_up:
+  - text: Hi there! 😊 I would like you to know you   
+    buttons: 
+    - title: "Sign up"
+      payload: "/sign_up"
+ 
+  utter_another_service: 
+  - text: "Do you want to use another service?"
+
+  utter_prescription_type:
+  - text: "How do you want to send us your Prescription?"
+    buttons:
+       - title: "Fill in a Form"
+         payload: "/prescription_type"
+  
+  utter_view_profile:
+  - text: "Click to view the User Profile."
+    buttons:
+       - title: "User Profile 👤"
+         payload: "/another_service"
+  
+  utter_delivery_question:
+  - text: "Would you like to get them delivered to your doorstep?"
+    buttons:
+       - title: "Hospital Pickup"
+         payload: "/bot_challenge"
+       - title: "Share your location 📍"
+         payload: "/location_share"
+
+  utter_appointment_verification: 
+  - text: "Do you wish to make another appointment?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Have a nice day! "
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

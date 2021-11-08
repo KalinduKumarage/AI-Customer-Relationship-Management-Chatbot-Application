@@ -1,0 +1,34 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.49337872862815857
+    }
+  },
+  {
+    "text": "Location shared",
+    "intent": "location_share",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5592163801193237
+    }
+  },
+  {
+    "text": "register",
+    "intent": "sign_up",
+    "intent_prediction": {
+      "name": "reset_conversation",
+      "confidence": 0.9911391735076904
+    }
+  },
+  {
+    "text": "login",
+    "intent": "sign_up",
+    "intent_prediction": {
+      "name": "reset_conversation",
+      "confidence": 0.40014633536338806
+    }
+  }
+]

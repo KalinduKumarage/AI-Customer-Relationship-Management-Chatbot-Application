@@ -1,0 +1,48 @@
+version: "2.0"
+
+rules:
+
+- rule: prompt the use to choose options whenever he/she greets 
+  steps: 
+  - intent: greet    
+  - action: utter_sign_up 
+
+- rule: prompt the use with the services after sign up 
+  steps: 
+  - intent: sign_up
+  - action: utter_services
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: whenever user wants to reset
+  steps: 
+  - intent: reset_conversation
+  - action: utter_services
+
+- rule: whenever user wants to use another service
+  steps: 
+  - intent: another_service 
+  - action: utter_services
+
+- rule: whenever user wants to make appointment  
+  steps:
+  - intent: make_appointment
+  - action: utter_appointment_options 
+
+- rule: whenever user wants to find nearby hospitals  
+  steps: 
+  - intent: hospitals_nearby
+  - action: utter_another_service
+
+- rule: whenver user wants to order prescription
+  steps: 
+  - intent: order_prescription
+  - action: utter_prescription_type
+
+- rule: whenver the user wants to view profile
+  steps: 
+  - intent: user_profile
+  - action: utter_view_profile

@@ -1,0 +1,225 @@
+.rw-conversation-container .rw-messages-container .rw-message .rw-response{background-color: #8154B9;
+  color: #ffff; font-family: 'Nunito Sans', sans-serif;}
+
+.rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: #478AFA; 
+ font-family: 'Nunito Sans', sans-serif;}
+ 
+.rw-conversation-container .rw-messages-container .rw-replies .rw-reply{background-color: #ffff;
+ color: black; font-family: 'Nunito Sans', sans-serif; padding: 16px 32px; border: 2px solid #8154B9;
+ text-align: center; box-shadow: none; transition: all 0.4s;}
+
+.rw-conversation-container .rw-messages-container .rw-replies .rw-reply:hover{background-color: #8154B9;
+ color: #ffff;}
+
+.rw-conversation-container .rw-header .rw-title{font-family: 'Nunito Sans', sans-serif; font-weight: 600}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/Dark\ Blue\ and\ Red\ Dynamic\ Software\ Solutions\ Website.png");
+  background-size: cover;
+}
+
+.p {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.topic {
+  font-size: 2.0rem;
+  color: #b630d1;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-left: 5%;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #800040;
+  color: white;
+  border: 1px solid #800040;
+  margin: 0 1rem;
+}
+
+.btn:hover {
+  background-color: #9c1458;
+  border-color: #9c1458;
+}
+
+.btn--alt {
+  background-color: transparent;
+  color: #800040;
+}
+
+.btn--alt:hover {
+  background-color: #f8dae9;
+}
+
+.card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  width: 20rem;
+}
+
+.actions {
+  text-align: right;
+}
+
+.modalPrescription {
+  box-shadow: 0 5px 165px rgb(0 0 0 / 25%);
+  background-color: white;
+  padding: 1rem;
+  width: 40rem;
+  height: 550px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 10010;
+  position: fixed;
+  top: 15vh;
+  left: calc(45% - 15rem);
+} 
+
+.modalUserLocation {
+  box-shadow: 0 5px 165px rgb(0 0 0 / 25%);
+  background-color: white;
+  padding: 1rem;
+  width: 50rem;
+  height: 600px;
+  z-index: 10010;
+  overflow-y: auto;
+  overflow-x: auto;
+  position: fixed;
+  top: 9vh;
+  bottom: auto;
+  left: calc(35% - 15rem);
+}
+
+.modalDoctorList {
+  box-shadow: 0 5px 165px rgb(0 0 0 / 25%);
+  /* border-radius: 15px; */
+  background-color: white;
+  padding: 1rem;
+  width: 30rem;
+  height: 550px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 10010;
+  position: fixed;
+  top: 15vh;
+  left: calc(50% - 15rem);
+}
+
+.modalAppointment {
+  box-shadow: 0 5px 165px rgb(0 0 0 / 25%);
+  background-color: white;
+  padding: 1rem;
+  width: 30rem;
+  height: 550px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 10010;
+  position: fixed;
+  top: 15vh;
+  left: calc(50% - 15rem);
+}
+
+.lblForm {
+  display: inline-block;
+  justify-content: flex-start;
+  text-align: left;
+  width: 150px;
+  height: 25px;
+  margin-left: 15px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+.modalRegisterForm input {
+  height: 25px;
+  width: 250px;
+}
+
+.modalRegisterForm {
+  box-shadow: 0 5px 165px rgb(0 0 0 / 25%);
+  background-color: white;
+  padding: 1rem;
+  width: 40rem;
+  height: 550px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 10010;
+  position: fixed;
+  top: 15vh;
+  left: calc(45% - 15rem);
+}
+
+.modal {
+  box-shadow: 0 5px 165px rgb(0 0 0 / 25%);
+  /* border-radius: 15px; */
+  background-color: white;
+  padding: 1rem;
+  width: 39rem;
+  height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 10010;
+  position: fixed;
+  top: 20vh;
+  left: calc(45% - 15rem);
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 25%;
+}
+
+.mymodal
+  {
+    box-shadow: 0 5px 165px rgb(0 0 0 / 25%);
+    border-radius: 15px;
+    background-color: white;
+    padding: 1rem;
+    width: 39rem;
+    height: 575px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10010;
+    position: fixed;
+    top: 10vh;
+    left: calc(45% - 15rem);
+  } 
+
+.backdrop {
+  position: fixed;
+  z-index: 10000;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+}
+
+.modalMaps {
+  box-shadow: 0 5px 165px rgb(0 0 0 / 25%);
+  background-color: white;
+  padding: 1rem;
+  width: 50rem;
+  height: 650px;
+  overflow-y: auto;
+  overflow-x: auto;
+  z-index: 10010;
+  position: fixed;
+  top: 5vh;
+  left: calc(40% - 15rem);
+}
+

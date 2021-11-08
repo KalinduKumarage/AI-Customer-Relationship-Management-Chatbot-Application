@@ -1,0 +1,190 @@
+version: "2.0"
+
+stories:
+
+- story: order prescription path 1
+  steps:
+  - intent: prescription_type
+  - action: utter_delivery_question
+  - intent: location_share
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services 
+
+- story: order prescription path 2
+  steps:
+  - intent: prescription_type
+  - action: utter_delivery_question
+  - intent: location_share
+  - action: utter_another_service
+  - intent: deny
+  - action: utter_goodbye 
+
+
+- story: doctor appointment channel hospital path 1
+  steps:
+  - intent: channel_hospital
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_name
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_specialty 
+  - action: utter_appointment_verification
+  - intent: deny    
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services
+
+- story: doctor appointment channel hospital path 2
+  steps:
+  - intent: channel_hospital
+  - action: utter_appointment_verification
+  - intent: deny    
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services
+
+- story: doctor appointment channel hospital path 3
+  steps:
+  - intent: channel_hospital
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_name
+  - action: utter_appointment_verification
+  - intent: deny    
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services
+
+- story: doctor appointment channel hospital path 4
+  steps:
+  - intent: channel_hospital
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_specialty 
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_name 
+  - action: utter_appointment_verification
+  - intent: deny    
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services
+
+- story: doctor appointment channel_name path 1
+  steps:
+  - intent: channel_name
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_hospital
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_specialty 
+  - action: utter_appointment_verification
+  - intent: deny    
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services 
+
+- story: doctor appointment channel_name path 2
+  steps:
+  - intent: channel_name
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_specialty
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_hospital
+  - action: utter_appointment_verification
+  - intent: deny    
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services
+
+- story: doctor appointment channel_name path 3
+  steps:
+  - intent: channel_name
+  - action: utter_appointment_verification
+  - intent: deny    
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services 
+
+- story: doctor appointment channel_name path 4
+  steps:
+  - intent: channel_name
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_specialty
+  - action: utter_appointment_verification
+  - intent: deny    
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services 
+
+- story: doctor appointment channel_hospital path 1
+  steps:
+  - intent: channel_hospital
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_specialty
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_name
+  - action: utter_appointment_verification
+  - intent: deny    
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services
+
+- story: doctor appointment channel_hospital path 2
+  steps:
+  - intent: channel_hospital
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_name
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_specialty
+  - action: utter_appointment_verification
+  - intent: deny    
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services
+
+- story: doctor appointment channel_hospital path 3
+  steps:
+  - intent: channel_hospital
+  - action: utter_appointment_verification
+  - intent: deny    
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services 
+
+- story: doctor appointment channel_hospital path 4
+  steps:
+  - intent: channel_hospital
+  - action: utter_appointment_verification
+  - intent: affirm
+  - action: utter_appointment_options
+  - intent: channel_name
+  - action: utter_appointment_verification
+  - intent: deny    
+  - action: utter_another_service
+  - intent: affirm
+  - action: utter_services
